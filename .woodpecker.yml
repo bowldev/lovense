@@ -1,0 +1,11 @@
+pipeline:
+  publish-docker-image:
+    image: plugins/kaniko
+    settings:
+      repo: bowldev/lovense
+      tags: latest
+      dockerfile: Dockerfile
+      username:
+        from_secret: DOCKER_USERNAME
+      password:
+        from_secret: DOCKER_PASSWORD

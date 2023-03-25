@@ -1,0 +1,3 @@
+discord
+tinyDB
+python-dotenv
